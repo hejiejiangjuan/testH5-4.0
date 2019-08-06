@@ -1,0 +1,18 @@
+
+@font-face {
+  font-family: 'my-icon';
+  src: url('./iconfont.ttf') format('truetype');
+}
+
+.my-icon {
+  font-family:'my-icon';
+}
+
+.my-icon-44::before {
+  content: "\e6a6";
+}
+
+.my-icon-arrow::before {
+  content: "\e6d2";
+}
+

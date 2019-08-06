@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>黑豆测评</title>
+    <style>
+      body{
+        background: whitesmoke;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but myobject doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+<!--    <script src="http://192.168.2.54:8090/target/target-script-min.js#anonymous"></script>-->
+  </body>
+
+  <script>
+    fnResize()
+    window.onresize = function () {
+      fnResize()
+    }
+    function fnResize() {
+      var deviceWidth = document.documentElement.clientWidth || window.innerWidth
+      if (deviceWidth >= 750) {
+        deviceWidth = 750
+      }
+      if (deviceWidth <= 320) {
+        deviceWidth = 320
+      }
+      //屏幕宽度/7.5+px=1rem
+      document.documentElement.style.fontSize = (deviceWidth / 7.5) + 'px'
+    }
+  </script>
+</html>
